@@ -39,9 +39,11 @@ Then, you can extend HateoasRemoteCommand:
   public class MyRemoteCommand extends HateoasRemoteCommand<Integer> {        
     private static final String RELATION = "myRelation";
     
-    public CountingAbTestRemoteCommand(RestOperations restOperations,
+    public MyRemoteCommand(RestOperations restOperations,
                                        HateoasLinkProvider hateoasLinkProvider) {
-      super(new HystrixConfiguration(true, 100000).getConfiguration("TEST"), restOperations, hateoasLinkProvider);
+      super(new HystrixConfiguration(true, 100000).getConfiguration("TEST"), 
+            restOperations, 
+            hateoasLinkProvider);
     }
     @Override
     protected Integer runCommand() throws Exception {
