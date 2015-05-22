@@ -38,10 +38,11 @@ Then, you can extend HateoasRemoteCommand:
 ```java
   public class MyRemoteCommand extends HateoasRemoteCommand<Integer> {        
     private static final String RELATION = "myRelation";
+    private static final String COMMAND_GROUP_KEY = "MyCommandGroup";
     
     public MyRemoteCommand(RestOperations restOperations,
                                        HateoasLinkProvider hateoasLinkProvider) {
-      super(new HystrixConfiguration(true, 100000).getConfiguration("TEST"), 
+      super(new HystrixConfiguration(true, 100000).getConfiguration(COMMAND_GROUP_KEY), 
             restOperations, 
             hateoasLinkProvider);
     }
