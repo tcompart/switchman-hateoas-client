@@ -25,17 +25,17 @@ make use of this caching.
 
 Add the library to your pom.xml:
 
-´´´xml
+```xml
 <dependency>
   <groupId>de.is24.common</groupId>
   <artifactId>switchman-hateoas-client</artifactId>
   <version>1.0</version>
 </dependency>
-´´´
+```
 
 Then, you can extend HateoasRemoteCommand:
 
-´´´java
+```java
   public class MyRemoteCommand extends HateoasRemoteCommand<Integer> {        
     private static final String RELATION = "myRelation";
     
@@ -49,4 +49,4 @@ Then, you can extend HateoasRemoteCommand:
       return restOperations.getForEntity(linkToConfigurations.getHref(), Integer.class);
     }
   }
-´´´
+```
