@@ -1,3 +1,12 @@
+```
+  _________       .__  __         .__
+ /   _____/_  _  _|__|/  |_  ____ |  |__   _____ _____    ____
+ \_____  \\ \/ \/ /  \   __\/ ___\|  |  \ /     \\__  \  /    \
+ /        \\     /|  ||  | \  \___|   Y  \  Y Y  \/ __ \|   |  \
+/_______  / \/\_/ |__||__|  \___  >___|  /__|_|  (____  /___|  /
+        \/                      \/     \/      \/     \/     \/
+                                  by ImmobilienScout24.de
+```
 # switchman-hateoas-client
 [![Build Status](https://api.travis-ci.org/ImmobilienScout24/switchman-hateoas-client.svg?branch=master)](https://travis-ci.org/ImmobilienScout24/switchman-hateoas-client)
 [![Coverage Status](https://coveralls.io/repos/ImmobilienScout24/switchman-hateoas-client/badge.svg)](https://coveralls.io/r/ImmobilienScout24/switchman-hateoas-client)
